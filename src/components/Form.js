@@ -1,4 +1,5 @@
 import React, {useState} from "react" ;
+import logoGIF from "../img/4DAq.gif";
 
 const Form = (props) => {
 
@@ -18,14 +19,32 @@ const {
 
     return(
     <>
-        <div className="title">
-          <h1> My <span>F</span>orm</h1>
-              <p>Create Accompte</p>
-        </div>
+
+        <section className="section">
+             <div className="zoneLOGO">
+                <img className="imgGIFI" src={logoGIF} />
+                  
+             </div>
+
+             <div className="title">  
+                <h1><span>F</span>ormulaire de contact</h1>
+                <p>Create Accompte</p>
+            </div>
+
+            <div className="SignaTure">
+                 <p style={{color:"#cbf000"}}>REACT</p>
+                  <strong>TSCopyright</strong>
+             </div>
+            
+
+             </section>
+        <section className="sectionFORM">
 
 
+        
 
-         <form  className="form_base"
+
+            <form  className="form_base"
       onSubmit={(event) => {
         event.preventDefault() ;
         
@@ -73,6 +92,11 @@ const {
         
         <p style={{color:"red"}}> {errorMessage} </p>
       </form>
+
+
+      </section>
+
+         
 
 
     </>
