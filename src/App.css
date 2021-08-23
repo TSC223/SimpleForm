@@ -1,38 +1,119 @@
-.App {
+body {
+  background: linear-gradient(136deg, #212121, black, #333333);
+  font-family: "Otomanopee One", sans-serif;
+}
+.title span {
+  color: #cbf000;
+  font-size: 90px;
+  text-shadow: 0px 0px 2px black;
+}
+.title {
+  font-size: 20px;
+  padding: 1%;
+  text-align: center;
+  position: relative;
+  color: white;
+  border-bottom: 2px solid #cbf000;
+  border-top: 2px solid #cbf000;
+  max-width: 65%;
+  margin: auto;
+  margin-bottom: 6%;
+  margin-top: 6%;
+  background: black;
+}
+.title h1 {
+  position: absolute;
+  font-size: 70px;
+  top: -123px;
+  right: 30%;
+  color: #007aff;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input:focus {
+  border: aqua;
+  color: #cbf000;
+  background: #fafafa;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form_base input {
+  font-family: "Otomanopee One", sans-serif;
+  border: 1px solid #007aff;
+  background: transparent;
+  padding-left: 2%;
+  height: 2.2em;
+  width: 45%;
+  height: 2.5em;
+  margin: auto;
+  font-size: 16px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: #cbf000;
+}
+.button:hover {
+  background: #007aff;
+  border: 2px solid #313131;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.button {
+  margin: auto;
+  font-family: "Otomanopee One", sans-serif;
+  background: linear-gradient(90deg, black, #333333);
+  color: #007aff;
+  padding: 0.8%;
+  margin-top: 3%;
+  text-align: center;
+  display: flex;
+  border: 1px solid #cbf000;
+  border-radius: 10px;
+  width: 25%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer {
+  background: #fafafa;
+
+  text-align: center;
+  margin-top: 10%;
+  padding: 2%;
+  bottom: 0;
+}
+.footer a {
+  color: grey;
+  text-decoration: none;
+  text-shadow: 0px 0px 1px #cbf000;
+}
+.footer a:hover {
+  color: #cbf000;
+}
+.footer span {
+}
+
+/*      MEDIA QUERY         */
+
+@media (max-width: 984px) {
+  body {
+    background: #fafafa;
+    color: black;
   }
-  to {
-    transform: rotate(360deg);
+  .title {
+    margin-bottom: 5%;
+    font-size: 20px;
+  }
+  .title h1 {
+    position: relative;
+
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 524px) {
+  body {
+    background: black;
+  }
+  .title {
+    margin-bottom: 5%;
+  }
+  .title h1 {
+    top: 0;
+    right: 0;
+    font-size: 50px;
   }
 }
