@@ -169,14 +169,34 @@ input:focus {
 
 @media (max-width: 524px) {
   body {
-    background: black;
+    background: url(./img/moon-36.gif) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+  .zoneLOGO {
+    position: absolute;
+    width: 30%;
+    top: 90px;
+  }
+  .SignaTure {
+    text-align: right;
+    margin-top: -45%;
   }
   .title {
-    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 18px;
+  }
+  .form_base {
+    margin-top: 15%;
   }
   .title h1 {
     top: 0;
     right: 0;
-    font-size: 50px;
+    font-size: 28px;
+    margin-bottom: 30%;
   }
 }
