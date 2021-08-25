@@ -173,6 +173,7 @@ input:focus {
 @media (max-width: 480px) {
   body {
     background: url(./img/opera_GIF.gif) no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
