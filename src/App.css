@@ -102,8 +102,7 @@ input:focus {
 .footer {
   background: linear-gradient(134deg, #fafafa, #978a8a);
   text-align: center;
-  margin-top: 10%;
-  padding: 4%;
+  padding: 5%;
   bottom: 0;
 }
 .footer a {
@@ -172,10 +171,7 @@ input:focus {
 
 @media (max-width: 480px) {
   body {
-    background: url(./img/opera_GIF.gif) no-repeat;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background: black;
   }
   .section {
     display: flex;
@@ -183,33 +179,48 @@ input:focus {
   }
   .zoneLOGO {
     position: absolute;
-    width: 30%;
-    top: 90px;
+    width: 25%;
+    top: 100px;
+    opacity: 0.4;
   }
   .SignaTure {
     text-align: right;
-    margin-top: -45%;
+    margin-top: -44%;
+    font-size: 65%;
+  }
+
+  .form_base {
+    color: white;
+    margin-top: 20%;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 10%;
+    background: url(./img/93dad0841430987dcf9f98dddd646064.gif) no-repeat;
+    background-size: cover;
+  }
+  .form_base input {
+    color: red;
+    background: black;
   }
   .title h1 {
-    margin-top: 5%;
-    font-size: 18px;
+    margin-top: 15%;
+    font-size: 23px;
+    margin-bottom: 30%;
     color: white;
   }
-  .form_base {
-    margin-top: 15%;
+  .title p {
+    color: white;
+    font-size: 15px;
+    margin-top: 10%;
   }
-  .title h1 {
-    top: 0;
-    right: 0;
-    font-size: 28px;
-    margin-bottom: 30%;
-  }
+
   .BODYsection {
-    margin-top: 20%;
+    margin-top: 30%;
     margin-bottom: 25%;
     width: 70%;
     margin-left: 10%;
   }
+
   /*  */
   .ficheUSer {
     margin-bottom: 10%;
