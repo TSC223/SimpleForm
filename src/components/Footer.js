@@ -5,7 +5,8 @@ function Footer () {
     return (
         <div div className="footer">
             <span>
-                Made with <strong>REACT</strong> at Le Reacteur BY <a href="https://ts-copyright.tidjanesi.ovh">TIDJANE</a>
+                Made with <strong>REACT</strong><br />
+                at Le Reacteur BY <a href="https://ts-copyright.tidjanesi.ovh">Sissoko T.</a>
             </span>
         </div>
     )

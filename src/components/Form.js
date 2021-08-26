@@ -28,7 +28,7 @@ const {
 
              <div className="title">  
                 <h1><span>F</span>ormulaire de contact</h1>
-                <p>Create Accompte</p>
+                <p>Inscription</p>
             </div>
 
             <div className="SignaTure">
@@ -57,7 +57,8 @@ const {
           
           }
       }}>
-            <input type="text" 
+            <input type="text"
+            style={{marginTop:"15%"}} 
             value={name} 
             onChange={ event =>{
             setName(event.target.value) ;
