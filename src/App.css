@@ -227,7 +227,7 @@ input:focus {
     margin-bottom: 0;
     width: 100%;
     padding-bottom: 15%;
-    padding: 10%;
+    padding: 15%;
     background: url(./img/93dad0841430987dcf9f98dddd646064.gif) no-repeat;
     background-size: cover;
     background-position: center;
@@ -238,7 +238,9 @@ input:focus {
     background: black;
     height: 40px;
   }
-
+  .title {
+    margin-left: -25%;
+  }
   .title h1 {
     margin-top: 10%;
     text-align: center;
@@ -250,8 +252,8 @@ input:focus {
   .title p {
     color: white;
     font-size: 35px;
-    margin-top: 10%;
-    margin-left: -20%;
+    margin-top: 15%;
+    margin-left: -15%;
     border-bottom: 3px solid #cbf000;
   }
 
