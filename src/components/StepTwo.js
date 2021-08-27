@@ -6,7 +6,7 @@ const StepTwo = ({name , email , password, setStep}) => {
         <>
         <section className="BODYsection">
         
-            <div className="pageTitle">Welcome
+            <div className="pageTitle">Merci pour la visite !
             <p style={{color:"white",fontSize:"12px",textAlign:"center"}}>Votre compte vient d'être créer</p>
             </div>
                 <div className="ficheUSer">

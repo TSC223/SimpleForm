@@ -211,7 +211,6 @@ input:focus {
     position: relative;
     width: 15%;
     top: 145px;
-    opacity: 0.8;
     display: block;
   }
   .SignaTure {
@@ -238,7 +237,7 @@ input:focus {
     color: white;
     font-weight: bold;
     background: black;
-    height: 50px;
+    height: 40px;
   }
 
   .title h1 {
@@ -258,8 +257,8 @@ input:focus {
   }
 
   .BODYsection {
-    margin-top: 30%;
-    margin-bottom: 25%;
+    margin-top: 55%;
+    margin-bottom: 55%;
     width: 70%;
     margin-left: 10%;
   }
