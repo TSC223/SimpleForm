@@ -1,8 +1,23 @@
+.custom-shape-divider-top-1629292462 {
+  display: none;
+}
+
+.custom-shape-divider-top-1629292462 svg {
+  display: none;
+}
+
+.custom-shape-divider-top-1629292462 .shape-fill {
+  display: none;
+}
+
+/* nuage html path */
+
 body {
   background: linear-gradient(166deg, black 33%, #212121, black);
   font-family: "Staatliches", cursive;
   background: url(./img/moon-36.gif) no-repeat;
   background-attachment: fixed;
+  background-position: center;
 }
 
 .section {
@@ -25,6 +40,7 @@ body {
   font-size: 13px;
   text-align: center;
   color: white;
+  text-shadow: 1px 1px 1px black;
   margin-top: 3%;
   display: flex;
   flex-direction: column;
@@ -42,11 +58,6 @@ body {
   text-align: center;
   display: block;
 }
-input:focus {
-  border: 0px solid black;
-  color: #cbf000;
-  background: #fafafa;
-}
 
 .SignaTure {
   color: white;
@@ -57,7 +68,7 @@ input:focus {
 
 .sectionFORM {
   display: flex;
-  margin-top: 5%;
+  margin-top: -5%;
   padding: 5%;
 }
 .form_base {
@@ -71,32 +82,34 @@ input:focus {
 .form_base input {
   font-family: "Otomanopee One", sans-serif;
   border: none;
-  border-bottom: 2px solid #cbf000;
+  border-bottom: 3px solid #cbf000;
   background: url(./img/transparentnoir80.png);
   padding-left: 2%;
   height: 3em;
   width: 90%;
-  font-size: 13px;
-  color: #cbf000;
+  font-size: 14px;
+  color: white;
+  font-weight: 900;
 }
 .button:hover {
-  background: #efefef;
+  background: #fafafa;
   border: 3px solid #cbf000;
   color: black;
   font-weight: bold;
   text-align: center;
+  border-left: 15px solid #333333;
+  border-right: 15px solid #333333;
 }
 .button {
-  margin: auto;
   font-family: "Otomanopee One", sans-serif;
   background: linear-gradient(90deg, black, #333333);
   color: #cbf000;
   padding: 1.5%;
   margin-top: 10%;
-  border-left: 10px solid black;
-  border-right: 10px solid black;
-  border-radius: 10%;
-  width: 40%;
+  border-left: 15px solid black;
+  border-right: 15px solid black;
+  border-radius: 5px;
+  width: 80%;
 }
 
 .footer {
@@ -184,6 +197,28 @@ input:focus {
 }
 
 @media (max-width: 480px) {
+  .custom-shape-divider-top-1629292462 {
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-top-1629292462 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 90px;
+  }
+
+  .custom-shape-divider-top-1629292462 .shape-fill {
+    fill: black;
+    display: block;
+  }
+
   body {
     background: black;
   }
@@ -194,6 +229,7 @@ input:focus {
   }
   .footer a {
     font-weight: bold;
+    color: #575757;
   }
   .footer span {
     font-size: 14px;
@@ -208,52 +244,62 @@ input:focus {
   }
   .zoneLOGO {
     position: relative;
-    width: 15%;
-    top: 145px;
+    width: 12.5%;
+    top: -20px;
+    left: -5%;
     display: block;
   }
   .SignaTure {
     text-align: right;
-    margin-top: -60%;
-    font-size: 80%;
+    margin-top: 0%;
+    position: absolute;
+    right: 1.5%;
+    top: 0;
+    font-size: 90%;
     line-height: 0.8;
   }
   .sectionFORM {
-    padding: 0%;
-  }
-  .form_base {
-    color: white;
-    margin-top: 30%;
-    margin-bottom: 0;
-    width: 100%;
-    padding-bottom: 15%;
-    padding: 15%;
     background: url(./img/93dad0841430987dcf9f98dddd646064.gif) no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 0%;
+    margin: 0;
+    width: 100%;
+    position: relative;
+  }
+  .form_base {
+    color: white;
+    width: 100%;
+    margin-top: 13%;
+    padding: 10%;
+    align-items: center;
+    /* background: url(./img/transparentnoir80.png) no-repeat;
+    background-size: cover;
+    background-position: center; */
   }
   .form_base input {
     color: white;
     font-weight: bold;
+    border-bottom: 10px solid #cbf000;
     background: black;
+    margin-top: 0px;
     height: 40px;
   }
   .title {
-    margin-left: -25%;
+    display: block;
+    margin: 35% 0% 10% 0%;
   }
   .title h1 {
-    margin-top: 10%;
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: 30%;
+    font-size: 32px;
+    margin-bottom: -10%;
     color: white;
-    left: 8%;
+    text-align: left;
   }
   .title p {
     color: white;
-    font-size: 35px;
-    margin-top: 15%;
-    margin-left: -15%;
+    font-size: 25px;
+    width: 30%;
+    text-align: left;
     border-bottom: 3px solid #cbf000;
   }
 
