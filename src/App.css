@@ -271,7 +271,7 @@ body {
     color: white;
     width: 100%;
     margin-top: 13%;
-    padding: 10%;
+    padding: 15%;
     align-items: center;
     /* background: url(./img/transparentnoir80.png) no-repeat;
     background-size: cover;
@@ -280,17 +280,17 @@ body {
   .form_base input {
     color: white;
     font-weight: bold;
-    border-bottom: 10px solid #cbf000;
+    border-bottom: 6px solid #cbf000;
     background: black;
     margin-top: 0px;
-    height: 40px;
+    height: 30px;
   }
   .title {
     display: block;
     margin: 35% 0% 10% 0%;
   }
   .title h1 {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: -10%;
     color: white;
     text-align: left;
