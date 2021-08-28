@@ -1,5 +1,7 @@
-import React, {useState} from "react" ;
+import React, {useState } from "react" ;
 import logoGIF from "../img/4DAq.gif";
+import PasswordMask from 'react-password-mask';
+
 
 const Form = (props) => {
 
@@ -72,25 +74,36 @@ const {
         }}
         placeholder="Nom" />
         <br />
-            <input type="text" 
+            <input type="text"
+            required 
             value={email} 
             onChange={ event =>{
             setEmail(event.target.value) ;
         }}
         placeholder="Email" />
         <br />
-            <input type="password" 
-            value={password} 
-            onChange={ event =>{
+                       
+          <PasswordMask type="password"
+          className="input"
+          id="password"
+          name="password" 
+          value={password} 
+          onChange={ event =>{
             setPassword(event.target.value) ;
         }}
+        useVendorStyles = { false }
         placeholder="Mot de passe" />
+
         <br />
-        <input type="password" 
+        <PasswordMask 
+        type="password"
+        className="input"
+        required
             value={confirmpass} 
-            onChange={ event =>{
-          setConfirmpass(event.target.value) ;
+          onChange={ event =>{
+        setConfirmpass(event.target.value) ;
         }}
+        useVendorStyles = { false }
         placeholder="Confirmer le mot de passe" />
         <br />
         <button className="button" type="submit" onClilck={() => {
